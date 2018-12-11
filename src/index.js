@@ -1,3 +1,1 @@
-import log from './log'
-
-log('hello world');
+import App from './App';

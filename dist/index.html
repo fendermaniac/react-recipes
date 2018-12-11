@@ -1,0 +1,140 @@
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ../node_modules/babel-loader/lib/index.js):
+  Error: Requires Babel "^7.0.0-0", but was loaded with "6.26.3". If you are sure you have a compatible version of @babel/core, it is likely that something in your build process is loading the wrong version. I  nspect the stack trace of this error to look for the first entry that doesn't mention "@babel/core" or "babel-core" to see what is calling Babel. (While processing preset: "C:\\Users\\joe\\Documents\\project  s\\react-recipes\\node_modules\\@babel\\preset-env\\lib\\index.js")
+  
+  - index.js:65 throwVersionError
+    [react-recipes]/[@babel]/helper-plugin-utils/lib/index.js:65:11
+  
+  - index.js:13 Object.assertVersion
+    [react-recipes]/[@babel]/helper-plugin-utils/lib/index.js:13:11
+  
+  - index.js:154 _default
+    [react-recipes]/[@babel]/preset-env/lib/index.js:154:7
+  
+  - index.js:19 
+    [react-recipes]/[@babel]/helper-plugin-utils/lib/index.js:19:12
+  
+  - option-manager.js:317 
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:317:46
+  
+  - Array.map
+  
+  - option-manager.js:275 OptionManager.resolvePresets
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:275:20
+  
+  - option-manager.js:264 OptionManager.mergePresets
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:264:10
+  
+  - option-manager.js:249 OptionManager.mergeOptions
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:249:14
+  
+  - option-manager.js:368 OptionManager.init
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:368:12
+  
+  - index.js:212 File.initOptions
+    [react-recipes]/[babel-core]/lib/transformation/file/index.js:212:65
+  
+  - index.js:135 new File
+    [react-recipes]/[babel-core]/lib/transformation/file/index.js:135:24
+  
+  - pipeline.js:46 Pipeline.transform
+    [react-recipes]/[babel-core]/lib/transformation/pipeline.js:46:16
+  
+  - index.js:50 transpile
+    [react-recipes]/[babel-loader]/lib/index.js:50:20
+  
+  
+  - Error: Requires Babel "^7.0.0-0", but was loaded with "6.26.3". If you are sure you have a compatible version of @babel/core, it is likely that something in your build process is loading the wrong version.     Inspect the stack trace of this error to look for the first entry that doesn't mention "@babel/core" or "babel-core" to see what is calling Babel. (While processing preset: "C:\\Users\\joe\\Documents\\pro    jects\\react-recipes\\node_modules\\@babel\\preset-env\\lib\\index.js")
+  
+  - Module build failed (from ../node_modules/babel-loader/lib/index.js):
+  
+  - Error: Requires Babel "^7.0.0-0", but was loaded with "6.26.3". If you are sure you have a compatible version of @babel/core, it is likely that something in your build process is loading the wrong version.     Inspect the stack trace of this error to look for the first entry that doesn't mention "@babel/core" or "babel-core" to see what is calling Babel. (While processing preset: "C:\\Users\\joe\\Documents\\pro    jects\\react-recipes\\node_modules\\@babel\\preset-env\\lib\\index.js")
+  
+  - index.js:65 throwVersionError
+    [react-recipes]/[@babel]/helper-plugin-utils/lib/index.js:65:11
+  
+  - index.js:13 Object.assertVersion
+    [react-recipes]/[@babel]/helper-plugin-utils/lib/index.js:13:11
+  
+  - index.js:154 _default
+    [react-recipes]/[@babel]/preset-env/lib/index.js:154:7
+  
+  - index.js:19 
+    [react-recipes]/[@babel]/helper-plugin-utils/lib/index.js:19:12
+  
+  - option-manager.js:317 
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:317:46
+  
+  - Array.map
+  
+  - option-manager.js:275 OptionManager.resolvePresets
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:275:20
+  
+  - option-manager.js:264 OptionManager.mergePresets
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:264:10
+  
+  - option-manager.js:249 OptionManager.mergeOptions
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:249:14
+  
+  - option-manager.js:368 OptionManager.init
+    [react-recipes]/[babel-core]/lib/transformation/file/options/option-manager.js:368:12
+  
+  - index.js:212 File.initOptions
+    [react-recipes]/[babel-core]/lib/transformation/file/index.js:212:65
+  
+  - index.js:135 new File
+    [react-recipes]/[babel-core]/lib/transformation/file/index.js:135:24
+  
+  - pipeline.js:46 Pipeline.transform
+    [react-recipes]/[babel-core]/lib/transformation/pipeline.js:46:16
+  
+  - index.js:50 transpile
+    [react-recipes]/[babel-loader]/lib/index.js:50:20
+  
+  
+  - Error: Requires Babel "^7.0.0-0", but was loaded with "6.26.3". If you are sure you have a compatible version of @babel/core, it is likely that something in your build process is loading the wrong version.     Inspect the stack trace of this error to look for the first entry that doesn't mention "@babel/core" or "babel-core" to see what is calling Babel. (While processing preset: "C:\\Users\\joe\\Documents\\pro    jects\\react-recipes\\node_modules\\@babel\\preset-env\\lib\\index.js")
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [react-recipes]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:296 compile
+    [react-recipes]/[webpack]/lib/Compiler.js:296:11
+  
+  - Compiler.js:552 hooks.afterCompile.callAsync.err
+    [react-recipes]/[webpack]/lib/Compiler.js:552:14
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [react-recipes]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:549 compilation.seal.err
+    [react-recipes]/[webpack]/lib/Compiler.js:549:30
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [react-recipes]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1323 hooks.optimizeAssets.callAsync.err
+    [react-recipes]/[webpack]/lib/Compilation.js:1323:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [react-recipes]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1314 hooks.optimizeChunkAssets.callAsync.err
+    [react-recipes]/[webpack]/lib/Compilation.js:1314:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [react-recipes]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1309 hooks.additionalAssets.callAsync.err
+    [react-recipes]/[webpack]/lib/Compilation.js:1309:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [react-recipes]/[tapable]/lib/Hook.js:154:20
+  
+</pre><script type="text/javascript" src="./bundle.js"></script>
