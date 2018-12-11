@@ -4,8 +4,8 @@
   "description": "Reusable React Recipes",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
-    "build": "npx index.js --out-file bundle.js"
+    "start": "node ./src/index.js",
+    "build": "npx webpack"
   },
   "keywords": [
     "react"
@@ -19,7 +19,8 @@
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "babel": "^6.23.0"
