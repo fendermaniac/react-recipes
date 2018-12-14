@@ -6,15 +6,7 @@
   "scripts": {
     "start": "npx webpack-dev-server",
     "build": "npx webpack",
-    "lint": "npx eslint ./src",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run-script lint",
-      "prettier --write",
-      "git add"
-    ]
+    "lint": "npx eslint ./src"
   },
   "keywords": [
     "react"
@@ -38,7 +30,6 @@
     "eslint-plugin-react": "^7.11.1",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "postcss": "^7.0.6",
     "postcss-cssnext": "^3.1.0",
