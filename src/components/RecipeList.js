@@ -12,9 +12,7 @@ const RecipeList = props => (
           onClick={() => props.onClick(recipe.id)}
         >
           <span>{recipe.name}</span>
-          <span>
-            {`: ${recipe.category}`}
-          </span>
+          <span>{`: ${recipe.category}`}</span>
         </li>
       ))}
     </ul>

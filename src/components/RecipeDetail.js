@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const RecipeDetail = (props) => {
+const RecipeDetail = props => {
   if (!props.recipe) {
     return (
       <p
         style={props.style}
-        className={classNames(`h3 p2 bg-white italic center ${props.className}`)}
+        className={classNames(
+          `h3 p2 bg-white italic center ${props.className}`,
+        )}
       >
         {'Please select a recipe to see the detail.'}
       </p>
@@ -27,21 +29,17 @@ const RecipeDetail = (props) => {
       <h3>Ingredients</h3>
       <ul>
         {props.recipe.ingredients.map(ingredient => (
-          <li key={ingredient}>
-            {ingredient}
-          </li>
+          <li key={ingredient}>{ingredient}</li>
         ))}
-
       </ul>
       <h3>Steps</h3>
       <ol>
         {props.recipe.steps.map(step => (
-          <li key={step}>
-            {step}
-          </li>
+          <li key={step}>{step}</li>
         ))}
       </ol>
-    </div>);
+    </div>
+  );
 };
 
 RecipeDetail.propTypes = {

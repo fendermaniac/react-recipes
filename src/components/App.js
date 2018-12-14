@@ -17,7 +17,7 @@ class App extends React.Component {
   componentDidMount() {
     fetch(`${API_URL}/v1/recipes`)
       .then(res => res.json())
-      .then((recipes) => {
+      .then(recipes => {
         this.setState({ recipes });
       });
   }
@@ -25,7 +25,7 @@ class App extends React.Component {
   onRecipeClick(id) {
     fetch(`${API_URL}/v1/recipes/${id}`)
       .then(res => res.json())
-      .then((recipe) => {
+      .then(recipe => {
         this.setState({ currentRecipe: recipe });
       });
   }
