@@ -21,7 +21,11 @@ const RecipeDetail = props => {
       className={classNames(`p2 bg-white ${props.className}`)}
     >
       <h2 className="h2">{props.recipe.name}</h2>
-      <img className="fit" src={props.recipe.image} alt={props.recipe.name} />
+      <img
+        className="fit"
+        src={`https://njkx.imgeng.in/${props.recipe.image}`}
+        alt={props.recipe.name}
+      />
       <div>
         <span>{props.recipe.category}</span>
         <span>{props.recipe.calories}</span>

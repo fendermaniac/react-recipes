@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npx webpack-dev-server",
     "build": "npx webpack",
+    "pretty": "npx prettier ./src/components/*.js --write",
     "lint": "npx eslint ./src"
   },
   "keywords": [
@@ -18,6 +19,7 @@
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -43,15 +45,16 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "babel-eslint": "^10.0.1",
     "basscss": "^8.0.10",
     "basscss-background-colors": "^2.1.0",
     "basscss-colors": "^2.2.0",
     "classnames": "^2.2.6",
     "eslint-config-prettier": "^3.3.0",
+    "npx": "^10.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
     "whatwg-fetch": "^3.0.0"
   }
 }
