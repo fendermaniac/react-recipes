@@ -22,12 +22,8 @@ const Header = () => (
       {'MyRecipes'}
     </h1>
     <nav>
-      <HeaderLink to="/">
-        {'Home'}
-      </HeaderLink>
-      <HeaderLink to="/favorites">
-        {'Favorites'}
-      </HeaderLink>
+      <HeaderLink to="/">{'Home'}</HeaderLink>
+      <HeaderLink to="/favorites">{'Favorites'}</HeaderLink>
     </nav>
   </header>
 );
@@ -35,6 +31,5 @@ const Header = () => (
 HeaderLink.propTypes = {
   children: PropTypes.node,
 };
-
 
 export default Header;
